@@ -1,0 +1,25 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Redirect</title>
+    <script>
+        window.onload = function() {
+            // Get the URL parameters
+            const urlParams = new URLSearchParams();
+            // Get the 'url' parameter value
+            const redirectUrl = urlParams.get('url');
+            // If 'url' parameter is present, redirect to that URL
+            if (redirectUrl) {
+                window.location.href = redirectUrl;
+            } else {
+                // If no 'url' parameter is provided, display a message
+                document.body.innerHTML = '<h1>No URL provided for redirection</h1>';
+            }
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
