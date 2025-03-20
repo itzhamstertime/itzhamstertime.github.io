@@ -52,4 +52,26 @@
         <p> itzhamstertime </p>
     </footer>
 </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Redirect</title>
+    <script>
+        function redirectToURL(event) {
+            event.preventDefault();
+            const url = document.getElementById('url').value;
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+    <h1>URL Redirector</h1>
+    <form onsubmit="redirectToURL(event)">
+        <label for="url">Enter URL:</label>
+        <input type="url" id="url" name="url" required>
+        <button type="submit">Go</button>
+    </form>
+</body>
 </html>
