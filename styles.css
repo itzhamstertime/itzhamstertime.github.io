@@ -1,0 +1,53 @@
+body {
+  background-color: #00ffff;
+  color: #000080;
+  font-family: 'comic sans ms', cursive, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: red;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+marquee {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: green;
+}
+
+img {
+  border: 3px solid purple;
+  margin: 10px;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.retro-btn {
+  background-color: #ffcc00;
+  border: 3px outset #cc9900;
+  color: #663300;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-family: 'comic sans ms', cursive, sans-serif;
+  box-shadow: 2px 2px 0 #cc9900;
+  transition: background-color 0.2s;
+}
+
+.retro-btn:hover {
+  background-color: #ffdd33;
+}
