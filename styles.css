@@ -92,12 +92,3 @@ body {
   background: #111;
 }
 
-#follower {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 64px;
-  height: 64px;
-  pointer-events: none;
-  transition: transform 0.1s linear;
-}
