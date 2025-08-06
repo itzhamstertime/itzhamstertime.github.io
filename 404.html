@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>404 - page not found</title>
+  <style>
+  <link rel="stylesheet" href="/styles.css" />
+    body {
+      background: black;
+      color: white;
+      font-family: monospace, monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+      user-select: none;
+    }
+    .hidden {
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+    .hidden.show {
+      opacity: 1;
+    }
+    .message {
+      max-width: 400px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="message">
+    <h1>404</h1>
+    <p>Oops, this page does not exist.</p>
+    <p class="hidden" id="secret">but you found the hidden part 👀</p>
+  </div>
+  <script>
+    // secret message appears after 5 seconds
+    setTimeout(() => {
+      const secret = document.getElementById('secret');
+      secret.classList.add('show');
+    }, 5000);
+  </script>
+</body>
+</html>
