@@ -4,7 +4,7 @@ const songs = [
     "backgound.mp3",
     "backround.mp3"
 ];
-
+const names = ["basement symphony", "the story of a hamster eating kebab", "explosion hamster"];
 let currentIndex = 0;
 let isPlaying = false;
 let shuffleMode = false;
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function loadSong(index) {
         audio.src = songs[index];
-        trackTitle.textContent = songs[index];
+        trackTitle.textContent = names[index];
         audio.play().catch(() => {
             // autoplay might be blocked by browser
         });
