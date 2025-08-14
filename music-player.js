@@ -1,8 +1,8 @@
 // list of wav files in your GitHub Pages repo folder
 const songs = [
-    "background.wav",
-    "backgound.wav",
-    "backround.wav"
+    "background.mp3",
+    "backgound.mp3",
+    "backround.mp3"
 ];
 
 let currentIndex = 0;
