@@ -125,3 +125,11 @@ body {
   max-width: 100%;
   height: auto;
   border: 3px double #333;
+a {
+    color: white; /* change this to whatever stands out */
+    text-decoration: underline; /* optional */
+}
+
+a:hover {
+    color: #cyan; /* hover color */
+}
