@@ -1,9 +1,9 @@
 const songs = [
-    "background.mp3",
+    "backround.mp3",
     "backgound.mp3",
-    "backround.mp3"
+    "background.mp3"
 ];
-const names = ["basement symphony", "hamster eating kebab", "explosion hamster"];
+const names = ["explosion hamster", "hamster eating kebab", "basement symphony"];
 let currentIndex = 0;
 let isPlaying = false;
 
