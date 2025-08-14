@@ -72,6 +72,46 @@ body {
 .button:hover {
   background: #ffee66;
 }
+#music-player {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(to bottom, #3a3a3a, #1a1a1a);
+    border: 3px solid #00ffcc;
+    border-radius: 6px;
+    font-family: "Comic Sans MS", cursive;
+    padding: 8px;
+    color: #00ffcc;
+    text-align: center;
+    width: 180px;
+    box-shadow: 0px 0px 8px #00ffcc;
+    z-index: 9999;
+}
+
+#music-player button {
+    background: linear-gradient(to bottom, #444, #111);
+    border: 2px solid #00ffcc;
+    color: #00ffcc;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 12px;
+    margin: 2px;
+    padding: 4px 6px;
+    cursor: pointer;
+}
+
+#music-player button:hover {
+    background: linear-gradient(to bottom, #555, #222);
+    color: #ffffff;
+}
+
+#track-title {
+    font-size: 11px;
+    margin: 5px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 
 .comic-container {
   display: flex;
