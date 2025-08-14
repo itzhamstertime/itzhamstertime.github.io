@@ -6,7 +6,7 @@ body {
 }
 
 h1 {
-  color: red;
+  color: white;
   text-shadow: 1px 1px 0 #fff;
 }
 
@@ -23,7 +23,7 @@ h1 {
 marquee {
   font-weight: bold;
   font-size: 1.2em;
-  color: green;
+  color: white;
 }
 
 img {
@@ -43,7 +43,7 @@ img {
   padding: 10px 20px;
   margin: 5px;
   cursor: pointer;
-  font-family: 'comic sans ms', cursive, sans-serif;
+  font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
   box-shadow: 2px 2px 0 #cc9900;
   transition: background-color 0.2s;
 }
@@ -79,7 +79,7 @@ body {
     background: linear-gradient(to bottom, #3a3a3a, #1a1a1a);
     border: 3px solid #00ffcc;
     border-radius: 6px;
-    font-family: "Comic Sans MS", cursive;
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
     padding: 8px;
     color: #00ffcc;
     text-align: center;
