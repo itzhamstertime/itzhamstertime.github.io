@@ -4,7 +4,7 @@ const songs = [
     "backgound.mp3",
     "backround.mp3"
 ];
-const names = ["basement symphony", "the story of a hamster eating kebab", "explosion hamster"];
+const names = ["basement symphony", "hamster eating kebab", "explosion hamster"];
 let currentIndex = 0;
 let isPlaying = false;
 let shuffleMode = false;
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const audio = document.getElementById("audio-player");
     const playPauseBtn = document.getElementById("play-pause");
     const trackTitle = document.getElementById("track-title");
-
+audio.loop = true;
     function loadSong(index) {
         audio.src = songs[index];
         trackTitle.textContent = names[index];
@@ -57,14 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("next").onclick = nextSong;
     document.getElementById("prev").onclick = prevSong;
     playPauseBtn.onclick = playPause;
-
-    document.getElementById("shuffle").onclick = () => {
-        shuffleMode = !shuffleMode;
-        alert("Shuffle: " + (shuffleMode ? "On" : "Off"));
     };
-
-    audio.onended = nextSong;
-
     // load first song on page load
     loadSong(currentIndex);
 });
