@@ -125,11 +125,16 @@ body {
   max-width: 100%;
   height: auto;
   border: 3px double #333;
-a:visited {
-    color: white; /* change this to whatever stands out */
-    text-decoration: underline; /* optional */
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+    color: white !important; /* normal + visited + active */
+    text-decoration: underline !important; /* optional */
 }
 
+/* optional hover color if you want it different */
 a:hover {
-    color: cyan; /* hover color */
+    color: cyan !important;
 }
