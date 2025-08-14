@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const audio = document.getElementById("audio-player");
     const playPauseBtn = document.getElementById("play-pause");
     const trackTitle = document.getElementById("track-title");
+    loadSong(currentIndex); // starts the first song
 audio.loop = true;
     function loadSong(index) {
         audio.src = songs[index];
