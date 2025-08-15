@@ -29,15 +29,20 @@
 <p class="blink">|</p>
 <a href="/hamsterlight.gpl" download>download hamsterlight my color palette</a>
   
-  <p>is this how many people visited my website: <span id="visits">loading...</span></p>
+<p>woah this is how many people were here: <span id="visits">loading...</span></p>
 
 <script>
-fetch('https://api.countapi.xyz/hit/itzhamstertime.github.io/visits')
+fetch('https://api.countapi.xyz/hit/githubpages-visitor-counter/chomiktime')
   .then(res => res.json())
   .then(res => {
     document.getElementById('visits').innerText = res.value
   })
+  .catch(err => {
+    document.getElementById('visits').innerText = 'error'
+    console.log(err)
+  })
 </script>
+
 
 <p>the gif and image gallery :</p>
   
