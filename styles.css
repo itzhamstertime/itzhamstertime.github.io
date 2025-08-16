@@ -3,6 +3,10 @@ body {
   color: white;
   font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
   text-align: center;
+  body {
+  cursor: url('imlegallyawebsitecursorforitzhamstertimeswebsite.png') 12 20, auto;
+}
+
 }
 
 h1 {
